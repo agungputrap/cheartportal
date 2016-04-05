@@ -38,3 +38,48 @@ HTTP_REFERER=http://localhost/cheart/index.php?r=user/login
 in D:\xampp\htdocs\cheart\protected\modules\rights\components\RInstaller.php (180)
 in D:\xampp\htdocs\cheart\protected\modules\rights\controllers\InstallController.php (43)
 in D:\xampp\htdocs\cheart\index.php (13)
+2016/04/05 09:08:04 [error] [exception.CException] exception 'CException' with message 'LoginController and its behaviors do not have a method or closure named "layout".' in D:\xampp\htdocs\yii\framework\base\CComponent.php:266
+Stack trace:
+#0 D:\xampp\htdocs\cheartportal\protected\modules\user\controllers\LoginController.php(28): CComponent->__call('layout', Array)
+#1 D:\xampp\htdocs\cheartportal\protected\modules\user\controllers\LoginController.php(28): LoginController->layout('login')
+#2 D:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): LoginController->actionLogin()
+#3 D:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 D:\xampp\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 D:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('')
+#7 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/login')
+#8 D:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#9 D:\xampp\htdocs\cheartportal\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/cheartportal/index.php?r=user/login
+---
+2016/04/05 09:40:56 [error] [exception.CException] exception 'CException' with message 'LoginController cannot find the requested view "login2".' in D:\xampp\htdocs\yii\framework\web\CController.php:878
+Stack trace:
+#0 D:\xampp\htdocs\yii\framework\web\CController.php(782): CController->renderPartial('login2', Array, true)
+#1 D:\xampp\htdocs\cheartportal\protected\modules\user\controllers\LoginController.php(40): CController->render('login2', Array)
+#2 D:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): LoginController->actionLogin()
+#3 D:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 D:\xampp\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 D:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('')
+#7 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/login')
+#8 D:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#9 D:\xampp\htdocs\cheartportal\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/cheartportal/index.php?r=user/login
+---
+2016/04/05 09:41:14 [error] [exception.CException] exception 'CException' with message 'LoginController cannot find the requested view "user/login2".' in D:\xampp\htdocs\yii\framework\web\CController.php:878
+Stack trace:
+#0 D:\xampp\htdocs\yii\framework\web\CController.php(782): CController->renderPartial('user/login2', Array, true)
+#1 D:\xampp\htdocs\cheartportal\protected\modules\user\controllers\LoginController.php(40): CController->render('user/login2', Array)
+#2 D:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): LoginController->actionLogin()
+#3 D:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 D:\xampp\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 D:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('')
+#7 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/login')
+#8 D:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#9 D:\xampp\htdocs\cheartportal\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/cheartportal/index.php?r=user/login
+---
