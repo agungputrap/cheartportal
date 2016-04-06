@@ -9,6 +9,8 @@ class LoginController extends Controller
 	 */
 	public function actionLogin()
 	{
+		var_dump(Yii::app()->controller->module->returnUrl);
+		var_dump(Yii::app()->user->returnUrl);
 		if (Yii::app()->user->isGuest) {
 			$model=new UserLogin;
 			// collect user input data
@@ -18,10 +20,13 @@ class LoginController extends Controller
 				// validate user input and redirect to previous page if valid
 				if($model->validate()) {
 					$this->lastViset();
-					if (Yii::app()->user->returnUrl=='/index.php')
+					Yii::app()->session['status'] = "masuk woi";
+					if (Yii::app()->user->returnUrl=='/index.php') {
 						$this->redirect(Yii::app()->controller->module->returnUrl);
-					else
+					}
+					else {
 						$this->redirect(Yii::app()->user->returnUrl);
+					}
 				}
 			}
 			// display the login form
@@ -29,7 +34,8 @@ class LoginController extends Controller
 			$this->render('/user/login2',array('model'=>$model));
 
 		} else
-			$this->redirect(Yii::app()->controller->module->returnUrl);
+			//$this->redirect(Yii::app()->controller->module->returnUrl);
+		$this->redirect(Yii::app()->user->returnUrl);
 	}
 	
 	private function lastViset() {

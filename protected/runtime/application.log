@@ -83,3 +83,19 @@ Stack trace:
 #10 {main}
 REQUEST_URI=/cheartportal/index.php?r=user/login
 ---
+2016/04/06 05:07:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/site/index".' in D:\xampp\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/site/index')
+#1 D:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\cheartportal\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/cheartportal/index.php?r=user/site/index
+---
+2016/04/06 05:21:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/log".' in D:\xampp\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/log')
+#1 D:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\cheartportal\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/cheartportal/index.php/user/log
+---

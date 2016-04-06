@@ -1,3 +1,3 @@
 <?php
-	echo "awesome";
+	echo "<pre>";var_dump(Yii::app()->session['status']);
 ?>
