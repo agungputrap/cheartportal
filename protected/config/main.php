@@ -11,6 +11,7 @@ return array(
 	'theme'=>'AdminLTE2',
 	// preloading 'log' component
 	'preload'=>array('log'),
+	'defaultController' => 'user/login',
 
 	// autoloading model and component classes
 	'import'=>array(
@@ -30,7 +31,7 @@ return array(
 			// If removed, Gii defaults to localhost only. Edit carefully to taste.
 			'ipFilters'=>array('127.0.0.1','::1'),
 		),
-		'user'=>array(
+		'user'=>array( 
                 'tableUsers' => 'users',
                 'tableProfiles' => 'profiles',
                 'tableProfileFields' => 'profiles_fields',
