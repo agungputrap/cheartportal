@@ -11,7 +11,6 @@ return array(
 	'theme'=>'AdminLTE2',
 	// preloading 'log' component
 	'preload'=>array('log'),
-	'defaultController' => 'user/login',
 
 	// autoloading model and component classes
 	'import'=>array(
@@ -108,6 +107,7 @@ return array(
 		
 		'urlManager'=>array(
 			'urlFormat'=>'path',
+			'showScriptName'=>false,
 			'rules'=>array(
 				'<controller:\w+>/<id:\d+>'=>'<controller>/view',
 				'<controller:\w+>/<action:\w+>/<id:\d+>'=>'<controller>/<action>',
